@@ -872,9 +872,107 @@ template {
   color: #183B56;
 }
 
+.collection {
+  padding-top: 60px;
+  padding-bottom: 72px;
+}
+
+.collection__pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 670px;
+}
+
+.collection__pictures-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.collection-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+}
+
+.collection__description-title {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+  max-width: 412px;
+  margin-bottom: 24px;
+}
+
+.collection__description-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+  max-width: 392px;
+  margin-bottom: 32px;
+}
+
+.collection__description-button {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1565D8;
+  border: none;
+  background: transparent;
+}
+
+.collection__description-button-arrow {
+  margin-left: 20px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 992px;
+  }
+  .collection__pictures-pic {
+    width: 320px;
+    height: 230px;
+  }
+  .collection__pictures-picbig {
+    margin-right: 22px;
+  }
+  .collection-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collection__description {
+    margin-left: 20px;
   }
 }
 
@@ -882,11 +980,56 @@ template {
   .container {
     max-width: 768px;
   }
+  .collection-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+  }
+  .collection__pictures {
+    margin: auto;
+  }
+  .collection__pictures-pic {
+    width: 320px;
+    height: 230px;
+  }
+  .collection__pictures-picbig {
+    margin-right: 0px;
+  }
+  .collection-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collection__description {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .collection__description-title {
+    max-width: 565px;
+    margin-bottom: 24px;
+  }
+  .collection__description-text {
+    max-width: 672px;
+    margin-bottom: 24px;
+  }
+  .collection__description-button {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    max-width: 576px;
+    max-width: 672px;
   }
   .header {
     padding-bottom: 48px;
@@ -925,12 +1068,59 @@ template {
   .navbar {
     display: none;
   }
+  .collection {
+    padding-top: 20px;
+  }
+  .collection-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    max-width: 672px;
+  }
+  .collection__pictures {
+    max-width: 672px;
+    margin: 0;
+  }
+  .collection__pictures-pic {
+    width: 320px;
+    height: 230px;
+  }
+  .collection__pictures-picbig {
+    margin-right: 0px;
+  }
+  .collection-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collection__description {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .collection__description-title {
+    max-width: 565px;
+    margin-bottom: 24px;
+  }
+  .collection__description-text {
+    max-width: 672px;
+    margin-bottom: 24px;
+  }
+  .collection__description-button {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 767px) {
-  .container {
-    max-width: 576px;
-  }
   .main__container {
     max-width: 728px;
   }
@@ -946,8 +1136,67 @@ template {
   }
 }
 
+@media (max-width: 675px) {
+  .container {
+    max-width: 576px;
+  }
+  .collection {
+    padding-top: 20px;
+  }
+  .collection-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    max-width: 576px;
+  }
+  .collection__pictures {
+    max-width: 576px;
+    margin: 0;
+  }
+  .collection__pictures-pic {
+    width: 255px;
+    height: 210px;
+  }
+  .collection__pictures-picbig {
+    margin-right: 0px;
+    width: 293px;
+  }
+  .collection-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .collection__description {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .collection__description-title {
+    max-width: 565px;
+    margin-bottom: 24px;
+  }
+  .collection__description-text {
+    max-width: 672px;
+    margin-bottom: 24px;
+  }
+  .collection__description-button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media (max-width: 576px) {
   .container {
+    max-width: 480px;
+  }
+  .collection {
+    max-width: 480px;
+  }
+  .collection__pictures {
     max-width: 480px;
   }
 }
@@ -991,9 +1240,9 @@ template {
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 480px) {
   .container {
-    max-width: 300px;
+    max-width: 350px;
   }
   .main {
     background-color: #E8EAE9;

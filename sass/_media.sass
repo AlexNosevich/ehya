@@ -2,14 +2,56 @@
 @media (max-width: 1200px)
     .container
         max-width: 992px
+    .collection
+        &__pictures
+            &-pic
+                width: 320px
+                height: 230px
+            &-picbig
+                margin-right: 22px
+        &-small
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+        &__description
+            margin-left: 20px
 
 @media (max-width: 992px)
     .container
         max-width: 768px
+    .collection
+        &-wrapper
+            flex-direction: column
+            margin: auto
+        &__pictures
+            margin: auto
+            &-pic
+                width: 320px
+                height: 230px
+            &-picbig
+                margin-right: 0px
+        &-small
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+        &__description
+            margin-left: 0px
+            margin-top: 40px
 
+            &-title
+
+                max-width: 565px
+                margin-bottom: 24px
+            &-text
+
+                max-width: 672px
+                margin-bottom: 24px
+            &-button
+                padding-left: 0
+                padding-right: 0
 @media (max-width: 768px)
     .container
-        max-width: 576px
+        max-width: 672px
     .header
         padding-bottom: 48px
     .main
@@ -39,9 +81,42 @@
     .navbar
         display: none
 
+    .collection
+        padding-top: 20px
+        &-wrapper
+            flex-direction: column
+            margin: auto
+            max-width: 672px
+        &__pictures
+            max-width: 672px
+            margin: 0
+            &-pic
+                width: 320px
+                height: 230px
+            &-picbig
+                margin-right: 0px
+        &-small
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+        &__description
+            margin-left: 0px
+            margin-top: 40px
+
+            &-title
+
+                max-width: 565px
+                margin-bottom: 24px
+            &-text
+
+                max-width: 672px
+                margin-bottom: 24px
+            &-button
+                padding-left: 0
+                padding-right: 0
+
 @media (max-width: 767px)
-    .container
-        max-width: 576px
+
     .main
         &__container
             max-width: 728px
@@ -52,9 +127,52 @@
             max-width: 400px
     .navbar
         display: none
+
+@media (max-width: 675px)
+    .container
+        max-width: 576px
+    .collection
+        padding-top: 20px
+        &-wrapper
+            flex-direction: column
+            margin: auto
+            max-width: 576px
+        &__pictures
+            max-width: 576px
+            margin: 0
+            &-pic
+                width: 255px
+                height: 210px
+            &-picbig
+                margin-right: 0px
+                width: 293px
+        &-small
+            display: flex
+            justify-content: space-between
+
+        &__description
+            margin-left: 0px
+            margin-top: 40px
+
+            &-title
+
+                max-width: 565px
+                margin-bottom: 24px
+            &-text
+
+                max-width: 672px
+                margin-bottom: 24px
+            &-button
+                padding-left: 0
+                padding-right: 0
+
 @media (max-width: 576px)
     .container
         max-width: 480px
+    .collection
+        max-width: 480px
+        &__pictures
+            max-width: 480px
 
 @media (max-width: 480px)
     .container
@@ -84,9 +202,9 @@
         &__button
             margin-left: 10px
 
-@media (max-width: 475px)
+@media (max-width: 480px)
     .container
-        max-width: 300px
+        max-width: 350px
     .main
         background-color: #E8EAE9
         &__container
