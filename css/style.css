@@ -991,6 +991,85 @@ template {
   }
 }
 
+@media (max-width: 475px) {
+  .container {
+    max-width: 300px;
+  }
+  .main {
+    background-color: #E8EAE9;
+  }
+  .main__container {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(47.32%, rgba(238, 238, 238, 0.0001)), color-stop(65.51%, #E8EAE9)), url(../img/header-image-400.jpg) no-repeat;
+    background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/header-image-400.jpg) no-repeat;
+    padding-top: 380px;
+    border-radius: 0;
+    margin: auto;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 0;
+  }
+  .main-hashtag {
+    margin-left: 0px;
+  }
+  .main__title {
+    padding-top: 22px;
+    padding-bottom: 20px;
+    margin-left: 0px;
+    margin: auto;
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 244px;
+    /*text-align: center*/
+  }
+  .main__text {
+    margin-left: 0px;
+    margin: auto;
+    /*text-align: center*/
+    max-width: 390px;
+    padding-bottom: 24px;
+  }
+  .main__button {
+    margin-left: 0px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 24px;
+  }
+  .main__payments {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+    max-width: 310px;
+    padding-bottom: 38px;
+  }
+  .main__payments-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .main__payments-item-text {
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: 8px;
+  }
+  #item3 {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 320px) {
   .container {
     max-width: 300px;
@@ -1063,9 +1142,6 @@ template {
         -ms-grid-row-align: center;
         align-self: center;
     margin-left: 8px;
-  }
-  #item3 {
-    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

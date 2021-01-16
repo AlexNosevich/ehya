@@ -84,6 +84,62 @@
         &__button
             margin-left: 10px
 
+@media (max-width: 475px)
+    .container
+        max-width: 300px
+    .main
+        background-color: #E8EAE9
+        &__container
+            background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/header-image-400.jpg) no-repeat
+            padding-top: 380px
+            border-radius: 0
+            margin: auto
+            text-align: center
+            align-items: center
+            padding-bottom: 0
+
+        &-hashtag
+            margin-left: 0px
+
+        &__title
+            padding-top: 22px
+            padding-bottom: 20px
+            margin-left: 0px
+            margin: auto
+            font-size: 32px
+            line-height: 40px
+            max-width: 244px
+            /*text-align: center*/
+
+        &__text
+            margin-left: 0px
+            margin: auto
+            /*text-align: center*/
+            max-width: 390px
+            padding-bottom: 24px
+
+        &__button
+            margin-left: 0px
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 24px
+        &__payments
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+            margin: auto
+            max-width: 310px
+            padding-bottom: 38px
+
+            &-item
+                display: flex
+                flex-direction: row
+                &-text
+                    text-align: center
+                    align-self: center
+                    margin-left: 8px
+    #item3
+        margin-top: 20px
 @media (max-width: 320px)
     .container
         max-width: 300px
@@ -139,4 +195,3 @@
                     align-self: center
                     margin-left: 8px
     #item3
-        margin-top: 20px
