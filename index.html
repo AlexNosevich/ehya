@@ -1,11 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/hk-grotesk" type="text/css"/>
+    <title>Ehya - Покупай одежду, не выходя из дома!</title>
 </head>
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.jpg" class="header__logo" alt="">
+            <nav class="navbar">
+                <a href="#" class="navbar__link">Главная</a>
+                <a href="#" class="navbar__link">Новинки</a>
+                <a href="#" class="navbar__link">Тренды</a>
+                <a href="#" class="navbar__link">Отзывы</a>
+                <a href="#" class="navbar__link">Контакты</a>
+                <button class="button navbar__button navbar__button--login">Войти</button>
+            </nav>
+            
+        </header>
+    </div>
+    <!-- /.container -->
+
+    <section class="main">
+        <div class="main__container">
+            <span class="main-hashtag"># READY TO BE COOL</span>
+            <h1 class="main__title">Каждый может быть крутым <br> и модным</h1>
+            <p class="main__text">Чтобы быть в тренде и стать модным, вам нужно носить 
+                отличную одежду и обновлять свой стиль.
+                 Всё это вы можете найти здесь. Начните сейчас. </p>
+            <button class="button main__button">Подобрать одежду</button>
+            <div class="main__payments">
+                <div class="main__payments-item">
+                    <img src="img/main-icons/icon-1.svg" alt="" class="main__payments-item-img">
+                    <span class="main__payments-item-text">Онлайн оплата</span>
+                </div>
+                <!-- /.main__payments--item -->
+                <div class="main__payments-item">
+                    <img src="img/main-icons/icon-2.svg" alt="" class="main__payments-item-img">
+                    <span class="main__payments-item-text">Гарантия</span>
+                </div>
+                <!-- /.main__payments--item -->
+                <div class="main__payments-item">
+                    <img src="img/main-icons/icon-3.svg" alt="" class="main__payments-item-img">
+                    <span class="main__payments-item-text">Качество</span>
+                </div>
+                <!-- /.main__payments--item -->
+            </div>
+            <!-- /.main__payment -->
+        </div>
+        <!-- /.main__container -->
+    </section>
+    <!-- /.main -->
 </body>
 </html>
