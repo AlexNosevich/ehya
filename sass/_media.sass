@@ -1,0 +1,142 @@
+
+@media (max-width: 1200px)
+    .container
+        max-width: 992px
+
+@media (max-width: 992px)
+    .container
+        max-width: 768px
+
+@media (max-width: 768px)
+    .container
+        max-width: 576px
+    .header
+        padding-bottom: 48px
+    .main
+        margin-top: 0
+        &__container
+            max-width: 728px
+            background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image-768.jpg) no-repeat
+            object-fit: contain
+            padding-top: 36px
+            padding-left: 28px
+            padding-bottom: 36px
+        &__title
+            font-size: 48px
+            margin-top: 24px
+            margin-bottom: 20px
+            line-height: 60px
+        &__text
+
+            max-width: 400px
+            margin-bottom: 36px
+            font-size: 18px
+            line-height: 32px
+        &__button
+            margin-bottom: 40px
+        &__payments
+            padding-bottom: 0
+    .navbar
+        display: none
+
+@media (max-width: 767px)
+    .container
+        max-width: 576px
+    .main
+        &__container
+            max-width: 728px
+        &__title
+            font-size: 48px
+        &__text
+            font-size: 18px
+            max-width: 400px
+    .navbar
+        display: none
+@media (max-width: 576px)
+    .container
+        max-width: 480px
+
+@media (max-width: 480px)
+    .container
+        max-width: 400px
+    .main
+
+        &__container
+            max-width: 420px
+            padding-left: 0
+        &__payments
+            &-item
+                display: flex
+                flex-direction: column
+                margin: auto
+                &-text
+                    margin-left: 0
+        &-hashtag
+            margin-left: 10px
+        &__title
+            margin-left: 10px
+            font-size: 42px
+            line-height: 40px
+        &__text
+            margin-left: 10px
+            font-size: 16px
+            line-height: 28px
+        &__button
+            margin-left: 10px
+
+@media (max-width: 320px)
+    .container
+        max-width: 300px
+    .main
+        background-color: #E8EAE9
+        &__container
+            background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image-320.jpg) no-repeat
+            padding-top: 380px
+            border-radius: 0
+            margin: auto
+            text-align: center
+            align-items: center
+            padding-bottom: 0
+
+        &-hashtag
+            margin-left: 0px
+
+        &__title
+            padding-top: 22px
+            padding-bottom: 20px
+            margin-left: 0px
+            margin: auto
+            font-size: 32px
+            line-height: 40px
+            max-width: 244px
+            /*text-align: center*/
+
+        &__text
+            margin-left: 0px
+            margin: auto
+            /*text-align: center*/
+            max-width: 280px
+            padding-bottom: 24px
+
+        &__button
+            margin-left: 0px
+            font-size: 16px
+            line-height: 22px
+            margin-bottom: 24px
+        &__payments
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+
+            max-width: 310px
+            padding-bottom: 38px
+
+            &-item
+                display: flex
+                flex-direction: row
+                &-text
+                    text-align: center
+                    align-self: center
+                    margin-left: 8px
+    #item3
+        margin-top: 20px
