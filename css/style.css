@@ -971,6 +971,180 @@ template {
   margin-left: 20px;
 }
 
+.trends__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.trends-title {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: 0.2px;
+  margin-bottom: 48px;
+  color: #183B56;
+}
+
+.tabs {
+  list-style-type: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 285px;
+}
+
+.tabs__item {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #5A7184;
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.tabs__item-active {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  color: #183B56;
+}
+
+.content__item {
+  display: none;
+}
+
+.content__item-active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+}
+
+.content__card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content__card-text {
+  display: block;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.2px;
+  color: #183B56;
+}
+
+.content__card-price {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 36px;
+  color: #5A7184;
+}
+
+.content__card-image {
+  width: 260px;
+  height: 350px;
+  margin-bottom: 20px;
+}
+
+.content__card-image-pic {
+  width: 260px;
+  height: 350px;
+}
+
+.content__card-image-pic:hover {
+  border-radius: 100px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.content__button {
+  width: 260px;
+  height: 350px;
+  background: #1565D8;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+}
+
+.content__button:hover {
+  background-image: -webkit-gradient(linear, left top, right top, from(#9EEFE1), color-stop(51%, #0d1e7e), to(#9EEFE1));
+  background-image: linear-gradient(to right, #9EEFE1 0%, #0d1e7e 51%, #9EEFE1 100%);
+  background-size: 200% auto;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-position: right center;
+}
+
+.content__button-plus {
+  margin-bottom: 25px;
+}
+
+.content-link {
+  text-decoration: none;
+  height: 440px;
+  margin-bottom: 52px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 992px;
