@@ -56,6 +56,7 @@
         padding-bottom: 48px
     .main
         margin-top: 0
+        margin-bottom: 80px
         &__container
             max-width: 728px
             background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image-768.jpg) no-repeat
@@ -82,7 +83,7 @@
         display: none
 
     .collection
-        padding-top: 20px
+        padding-top: 0px
         &-wrapper
             flex-direction: column
             margin: auto
@@ -132,7 +133,8 @@
     .container
         max-width: 576px
     .collection
-        padding-top: 20px
+        padding-top: 0px
+
         &-wrapper
             flex-direction: column
             margin: auto
@@ -168,12 +170,37 @@
 
 @media (max-width: 576px)
     .container
-        max-width: 480px
+        max-width: 520px
     .collection
-        max-width: 480px
+        max-width: 520px
+        margin: auto
         &__pictures
-            max-width: 480px
+            max-width: 520px
 
+            &-small
+
+            &-pic
+                width: 200px
+                height: 200px
+            &-picbig
+                width: 285px
+
+@media (max-width: 520px)
+    .container
+        max-width: 450px
+    .collection
+        max-width: 450px
+        margin: auto
+        &__pictures
+            max-width: 450px
+
+            &-small
+
+            &-pic
+                width: 150px
+                height: 150px
+            &-picbig
+                height: 315px
 @media (max-width: 480px)
     .container
         max-width: 400px
@@ -202,10 +229,56 @@
         &__button
             margin-left: 10px
 
+    .collection
+        max-width: 350px
+
+        &-wrapper
+
+        &__pictures
+            max-width: 350px
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            &-item
+                width: 290px
+                height: 300px
+
+            &-small
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                width: 290px
+                margin-top: 15px
+                &-left
+                    width: 138px
+                    height: 97px
+                &-right
+                    width: 138px
+                    height: 97px
+            &-pic
+                width: 138px
+                height: 97px
+            &-picbig
+                width: 290px
+                height: 300px
+                object-fit: cover
+        &__description
+            &-title
+                text-align: center
+            &-text
+                text-align: center
+            &-button
+                display: flex
+                margin: auto
+                &-arrow
+                    align-self: center
+
 @media (max-width: 480px)
     .container
         max-width: 350px
     .main
+        margin-bottom: 34px
         background-color: #E8EAE9
         &__container
             background: linear-gradient(180deg, rgba(238, 238, 238, 0.0001) 47.32%, #E8EAE9 65.51%), url(../img/header-image-400.jpg) no-repeat
@@ -258,10 +331,66 @@
                     margin-left: 8px
     #item3
         margin-top: 20px
+    .collection
+        padding-top: 0
+        &__description
+            &-title
+                font-size: 28px
+                line-height: 36px
+            &-text
+                font-size: 16px
+                line-height: 28px
+            &-button
+                display: flex
+                margin: auto
+                &-arrow
+                    align-self: center
+
+@media (max-width: 360px)
+    .collection
+        max-width: 290px
+        padding-top: 0
+
+        &-wrapper
+
+        &__pictures
+            max-width: 290px
+            display: flex
+            flex-direction: column
+            align-items: center
+
+            &-item
+                width: 290px
+                height: 300px
+
+            &-small
+                display: flex
+                flex-direction: row
+                justify-content: space-between
+                width: 290px
+                margin-top: 15px
+                &-left
+                    width: 138px
+                    height: 97px
+                &-right
+                    width: 138px
+                    height: 97px
+            &-pic
+                width: 138px
+                height: 97px
+            &-picbig
+                width: 290px
+                height: 300px
+                object-fit: cover
+        &__description
+            &-button
+                display: none
+
 @media (max-width: 320px)
     .container
         max-width: 300px
     .main
+        margin-bottom: 34px
         background-color: #E8EAE9
         &__container
             background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image-320.jpg) no-repeat
@@ -303,7 +432,7 @@
             flex-wrap: wrap
 
             max-width: 310px
-            padding-bottom: 38px
+            padding-bottom: 34px
 
             &-item
                 display: flex
@@ -312,4 +441,11 @@
                     text-align: center
                     align-self: center
                     margin-left: 8px
+
     #item3
+    .collection
+        padding-top: 0
+        padding-bottom: 110px
+        &__description
+            &-text
+                margin-bottom: 0px
