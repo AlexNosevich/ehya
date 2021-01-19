@@ -775,7 +775,7 @@ template {
   line-height: 22px;
   text-align: center;
   color: #1565D8;
-  padding: 10px 12px;
+  padding: 13px 24px;
   background-color: #fff;
   border-color: #1565D8;
   border-radius: 8px;
@@ -824,6 +824,8 @@ template {
 
 .main__title {
   font-family: HK Grotesk;
+  -webkit-font-feature-settings: "locl" 0;
+          font-feature-settings: "locl" 0;
   font-style: normal;
   font-weight: 700;
   font-size: 56px;
@@ -1149,6 +1151,10 @@ template {
   .container {
     max-width: 992px;
   }
+  .header {
+    width: 95%;
+    margin: auto;
+  }
   .collection__pictures-pic {
     width: 320px;
     height: 230px;
@@ -1176,6 +1182,22 @@ template {
 @media (max-width: 992px) {
   .container {
     max-width: 768px;
+  }
+  .header {
+    width: 95%;
+    margin: auto;
+  }
+  .main__button:hover {
+    background: #183B56;
+  }
+  .navbar {
+    width: 600px;
+  }
+  .navbar__button:hover {
+    background-image: none;
+    color: #1565D8;
+    background-color: #fff;
+    border-color: #1565D8;
   }
   .collection-wrapper {
     -webkit-box-orient: vertical;
@@ -1241,13 +1263,13 @@ template {
     background: linear-gradient(270deg, rgba(238, 238, 238, 0.0001) 67.34%, #E8EAE9 100%), url(../img/header-image-768.jpg) no-repeat;
     -o-object-fit: contain;
        object-fit: contain;
-    padding-top: 36px;
+    padding-top: 42px;
     padding-left: 28px;
     padding-bottom: 36px;
   }
   .main__title {
     font-size: 48px;
-    margin-top: 24px;
+    margin-top: 30px;
     margin-bottom: 20px;
     line-height: 60px;
   }
