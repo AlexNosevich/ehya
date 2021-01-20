@@ -1,0 +1,90 @@
+*
+    box-sizing: border-box
+.stories
+    display: flex
+    justify-content: space-between
+    max-width: 1140px
+    margin: auto
+    &__blog
+        display: flex
+        justify-content: space-between
+        width: 653px
+        &-card
+            max-width: 312px
+            position: relative
+
+            &-paragraph
+                position: absolute
+                padding: 20px
+                background: #FAFDFF
+                left: 10px
+                bottom: -60px
+                width: 240px
+
+                &-title
+                    max-width: 260px
+                    font-family: HK Grotesk
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 16px
+                    line-height: 32px
+                    letter-spacing: 0.2px
+
+                    color: #183B56
+            &-container
+                width: 312px
+                height: 317px
+                &-picture
+                    width: 312px
+                    height: 317px
+                    object-fit: cover
+                    border-radius: 8px 8px 0px 0px
+    &-title
+        font-family: HK Grotesk
+        font-style: normal
+        font-weight: bold
+        font-size: 48px
+        line-height: 60px
+        max-width: 337px
+        letter-spacing: 0.2px
+
+        color: #183B56
+    &-text
+        font-family: Open Sans
+        font-style: normal
+        font-weight: normal
+        font-size: 20px
+        line-height: 36px
+
+        max-width: 392px
+        color: #5A7184
+    &__buttons
+        margin-top: 20px
+        margin-bottom: 20px
+        &-button
+            border: 2px solid #183B56
+            box-sizing: border-box
+            border-radius: 50%
+            padding: 20px
+            background-color: #fff
+            &-prev
+                border: 2px solid #959EAD
+                box-sizing: border-box
+                border-radius: 50%
+                padding: 20px
+                background-color: #fff
+                margin-right: 22px
+    &-hashtag
+        font-family: Open Sans
+        font-style: normal
+        font-weight: 600
+        font-size: 14px
+        line-height: 20px
+        text-align: center
+        text-transform: uppercase
+        display: inline-block
+        color: #36B37E
+        padding: 6px 16px
+        background: rgba(54, 179, 126, 0.1)
+        border-radius: 2000px
+        margin-bottom: 34px
