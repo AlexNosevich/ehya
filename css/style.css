@@ -1147,6 +1147,74 @@ template {
   margin-bottom: 52px;
 }
 
+.reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.reviews-text {
+  max-width: 800px;
+  padding-bottom: 28px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.133333px;
+  color: #183B56;
+}
+
+.reviews-name {
+  padding-bottom: 48px;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #183B56;
+}
+
+.reviews__quote-wrapper {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.swiper-container {
+  width: 800px;
+}
+
+.swiper-pagination {
+  bottom: 0px;
+}
+
+.swiper-pagination-bullet {
+  background: #B3BAC5;
+  border-radius: 2.5px;
+  bottom: 0%;
+  width: 5px;
+  height: 5px;
+}
+
+.swiper-pagination-bullet-active {
+  background: #183B56;
+  border-radius: 2.5px;
+}
+
+.swiper-pagination-bullets {
+  bottom: 0px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 992px;
@@ -1297,11 +1365,11 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: auto;
-    max-width: 672px;
+    width: 672px;
   }
   .collection__pictures {
-    max-width: 672px;
-    margin: 0;
+    width: 97%;
+    margin: auto;
   }
   .collection__pictures-pic {
     width: 320px;
@@ -1354,6 +1422,58 @@ template {
   .navbar {
     display: none;
   }
+  .collection {
+    padding-top: 0px;
+    width: 97%;
+    margin: auto;
+  }
+  .collection-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: auto;
+    width: 672px;
+  }
+  .collection__pictures {
+    max-width: 672px;
+    margin: 0;
+  }
+  .collection__pictures-pic {
+    width: 320px;
+    height: 230px;
+  }
+  .collection__pictures-picbig {
+    margin-right: 0px;
+  }
+  .collection-small {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .collection__description {
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+  .collection__description-title {
+    max-width: 565px;
+    margin-bottom: 24px;
+  }
+  .collection__description-text {
+    max-width: 672px;
+    margin-bottom: 24px;
+  }
+  .collection__description-button {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 675px) {
@@ -1369,14 +1489,14 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     margin: auto;
-    max-width: 576px;
+    width: 100%;
   }
   .collection__pictures {
-    max-width: 576px;
-    margin: 0;
+    width: 97%;
+    margin: auto;
   }
   .collection__pictures-pic {
-    width: 255px;
+    width: 240px;
     height: 210px;
   }
   .collection__pictures-picbig {
@@ -1417,15 +1537,19 @@ template {
     max-width: 520px;
     margin: auto;
   }
+  .collection-wrapper {
+    width: 100%;
+  }
   .collection__pictures {
-    max-width: 520px;
+    width: 97%;
+    margin: auto;
   }
   .collection__pictures-pic {
     width: 200px;
     height: 200px;
   }
   .collection__pictures-picbig {
-    width: 285px;
+    width: 270px;
   }
 }
 

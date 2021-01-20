@@ -9,4 +9,25 @@ $(document).ready(function() {
         $(activeContent).addClass('content__item-active');
         $(this).addClass('tabs__item-active');
     });
+
 });
+
+var mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    autoplay: {
+        delay: 7000,
+        disableOnInteraction: true,
+      },
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })
